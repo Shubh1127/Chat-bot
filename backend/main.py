@@ -13,7 +13,7 @@ from langchain.chains import ConversationChain
 load_dotenv()
 
 # --- STEP 1: Handle service account credentials securely ---
-credentials_json = os.getenv("GOOGLE_APPLICATION_CREDENTIALS_JSON")
+credentials_json = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
 
 if credentials_json:
     with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.json') as tmp:
