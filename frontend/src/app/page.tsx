@@ -27,7 +27,7 @@ export default function Home() {
 
     try {
       setMessages((prev) => [...prev, { role: "user", content: input }]);
-      const res = await axios.post<{ reply: string }>("http://localhost:8000/ask", {
+      const res = await axios.post<{ reply: string }>("https://chat-bot-4868.onrender.com/ask", {
         message: input,
       });
       setMessages((prev) => [...prev, { role: "ai", content: res.data.reply }]);
