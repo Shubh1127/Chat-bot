@@ -53,7 +53,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col h-screen w-screen bg-[#202123]">
-      <h1 className="text-center my-8 font-bold text-2xl">AI Assistant</h1>
+      <h1 className="text-center my-8 font-bold text-3xl">AI Assistant</h1>
       
       <div className={`overflow-y-auto ${messages.length === 0 ? "h-[25%]" : "h-[80%]"} w-full mb-12 p-4 px-4 md:px-[20vw]`} style={{ scrollBehavior: "smooth" }}>
         {!messages && (
