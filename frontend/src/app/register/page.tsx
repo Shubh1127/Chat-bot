@@ -13,7 +13,7 @@ export default function Register() {
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleEmailSubmit = async (e) => {
+  const handleEmailSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     try {
@@ -34,7 +34,7 @@ export default function Register() {
     }
   };
 
-  const handleOtpSubmit = async (e) => {
+  const handleOtpSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     try {
@@ -55,7 +55,7 @@ export default function Register() {
     }
   };
 
-  const handleFinalSubmit = async (e) => {
+  const handleFinalSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     try {
