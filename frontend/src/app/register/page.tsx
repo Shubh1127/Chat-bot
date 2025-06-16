@@ -82,7 +82,7 @@ export default function Register() {
 
   return (
     <div className="w-screen h-screen text-center flex flex-col justify-center items-center">
-      <h1 className="text-2xl mb-2">Register to Get Started</h1>
+      <h1 className="text-2xl mb-3">Register to Get Started</h1>
       
       <div className="border-2 rounded-xl w-max h-max p-6 overflow-hidden relative">
         <AnimatePresence mode='wait'>
