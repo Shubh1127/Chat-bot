@@ -71,7 +71,7 @@ export default function Home() {
         <div ref={messageEndRef} />
       </div>
 
-      {/* Input container with properly aligned button */}
+      
       <div className="flex flex-col items-center mb-8 px-4 w-full">
         <div className="relative w-full max-w-2xl">
           <input
